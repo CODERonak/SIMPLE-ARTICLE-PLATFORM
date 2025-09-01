@@ -1,10 +1,9 @@
 
-
 ---
 
 # 📝 Simple Article Platform (SAP) – Microservices Architecture
 
-A **Java Spring Boot-based Article Publishing Platform** built using **microservices**, following **clean architecture** principles, with **service discovery** via Eureka and service communication with **openfeign**.
+A **Java Spring Boot-based Article Publishing Platform** built using **microservices**, following **clean architecture** principles, with **service discovery** via Eureka and service communication with **OpenFeign**.
 
 ---
 
@@ -33,7 +32,7 @@ A **Java Spring Boot-based Article Publishing Platform** built using **microserv
 
 ## 🧱 Tech Stack
 
-* **Java 21**, Spring Boot **3.5.x**
+* **Java 21**, Spring Boot **3.5.5**
 * Spring Web, Spring Data JPA, Hibernate Validator
 * Lombok, MapStruct
 * Spring Boot Actuator
@@ -74,12 +73,12 @@ src/
 
 ## 📦 GitHub Repositories
 
-| Microservice      | Repository Name       | Link             |
-| ----------------- | --------------------- | ---------------- |
-| `user-service`    | `SAP-User-Service`    | 🔗 *Coming Soon* |
-| `post-service`    | `SAP-Post-Service`    | 🔗 *Coming Soon* |
-| `comment-service` | `SAP-Comment-Service` | 🔗 *Coming Soon* |
-| `eureka-server`   | `SAP-Eureka-Server`   | 🔗 *Coming Soon* |
+| Microservice      | Repository Name       | Link                                                                 |
+| ----------------- | --------------------- | -------------------------------------------------------------------- |
+| `user-service`    | `SAP-User-Service`    | 🔗 [SAP-User-Service](https://github.com/CODERonak/SAP-User-Service) |
+| `post-service`    | `SAP-Post-Service`    | 🔗 *Coming Soon*                                                     |
+| `comment-service` | `SAP-Comment-Service` | 🔗 *Coming Soon*                                                     |
+| `eureka-server`   | `SAP-Eureka-Server`   | 🔗 *Coming Soon*                                                     |
 
 ---
 
@@ -88,12 +87,12 @@ src/
 ### Entity
 
 ```java
-User {
-  Long id;
-  String username;
-  String email;
-  String passwordHash;
-  String bio;
+public class User {
+    Long id;
+    String username;
+    String email;
+    String passwordHash;
+    String bio;
 }
 ```
 
@@ -113,11 +112,11 @@ User {
 ### Entity
 
 ```java
-Post {
-  Long id;
-  Long authorId;     // FK → User Service
-  String title;
-  String content;
+public class Post {
+    Long id;
+    Long authorId;     
+    String title;
+    String content;
 }
 ```
 
@@ -138,11 +137,11 @@ Post {
 ### Entity
 
 ```java
-Comment {
-  Long id;
-  Long postId;    // FK → Post Service
-  Long userId;    // FK → User Service
-  String content;
+public class Comment {
+    Long id;
+    Long postId;    
+    Long userId;    
+    String content;
 }
 ```
 
@@ -179,4 +178,3 @@ Comment {
 * **Eureka Server** → Service discovery
 
 ---
-
