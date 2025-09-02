@@ -75,10 +75,11 @@ src/
 
 | Microservice      | Repository Name       | Link                                                                 |
 | ----------------- | --------------------- | -------------------------------------------------------------------- |
-| `user-service`    | `SAP-User-Service`    | 🔗 [SAP-User-Service](https://github.com/CODERonak/SAP-User-Service) |
-| `post-service`    | `SAP-Post-Service`    | 🔗 [SAP-Post-Service](https://github.com/CODERonak/SAP-Post-Service)                                                     |
-| `comment-service` | `SAP-Comment-Service` | 🔗 *Coming Soon*                                                     |
-| `eureka-server`   | `SAP-Eureka-Server`   | 🔗 *Coming Soon*                                                     |
+| `user-service`    | SAP-User-Service      | [SAP-User-Service](https://github.com/CODERonak/SAP-User-Service)    |
+| `post-service`    | SAP-Post-Service      | [SAP-Post-Service](https://github.com/CODERonak/SAP-Post-Service)    |
+| `comment-service` | SAP-Comment-Service   | *Coming Soon*                                                        |
+| `eureka-server`   | SAP-Eureka-Server     | [SAP-Eureka-Server](https://github.com/CODERonak/SAP-Eureka-Server)  |
+
 
 ---
 
