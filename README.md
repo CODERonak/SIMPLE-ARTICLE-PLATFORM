@@ -102,8 +102,6 @@ public class User {
 | ------ | ----------------- | ------------------- |
 | POST   | `/users/register` | Register a new user |
 | GET    | `/users/{id}`     | Get user details    |
-| PUT    | `/users/{id}`     | Update profile      |
-| DELETE | `/users/{id}`     | Delete user         |
 
 ---
 
@@ -127,8 +125,6 @@ public class Post {
 | POST   | `/posts`      | Create post (validates user exists) |
 | GET    | `/posts`      | List all posts                      |
 | GET    | `/posts/{id}` | Get post with author info           |
-| PUT    | `/posts/{id}` | Update post                         |
-| DELETE | `/posts/{id}` | Delete post                         |
 
 ---
 
